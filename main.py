@@ -20,7 +20,11 @@ app.add_middleware(
 )
 
 # Inisialisasi Firebase Admin SDK
+<<<<<<< HEAD
 cred = credentials.Certificate("D:/project/flutter_app/uas-mobile-607b2-firebase-adminsdk-d3iej-680b9970d0.json")
+=======
+cred = credentials.Certificate("D:/mobileUAS/flutter_app/uas-mobile-607b2-firebase-adminsdk-d3iej-680b9970d0.json")
+>>>>>>> 27e2af3dc0095abbf5bce401abd61bcab0bb51c7
 firebase_admin.initialize_app(cred)
 
 # Model untuk LaundryShop
@@ -40,6 +44,7 @@ laundries = [
     LaundryShop(name= "Ngumbahyuk Laundry",rating= 5,address= "Jln Kali Rungkut",type= "Regular", image_url= "https://lh6.googleusercontent.com/SGOWlY45_rjF3JwsSnaa33wjAADPhMzmruanH-DDqYrQcnd8EFBFKUf8UfBAomU1f_6C9dtIH6wVYhpPD8d5ZhO_ooxGanhaR8Q445EMMeHoQUXrqueshXqEG7bA5ISknqxH2Bw",description= "Ngumbahyuk hadir untuk meringankan beban kalian yang penuh itu, Yuk di order segera dijamin cucian bakal harum dan bersih kembali",price= "Rp8.000/ Kg"),
     LaundryShop(name= "NyuciKuy Laundry",rating= 5,address= "Jln Ir Soekarno",type= "Regular", image_url= "https://lh6.googleusercontent.com/SGOWlY45_rjF3JwsSnaa33wjAADPhMzmruanH-DDqYrQcnd8EFBFKUf8UfBAomU1f_6C9dtIH6wVYhpPD8d5ZhO_ooxGanhaR8Q445EMMeHoQUXrqueshXqEG7bA5ISknqxH2Bw",description= "Ngumbahyuk hadir untuk meringankan beban kalian yang penuh itu, Yuk di order segera dijamin cucian bakal harum dan bersih kembali",price= "Rp8.000/ Kg"),
     LaundryShop(name= "Ngumbahyuk Laundry",rating= 5,address= "Jln Medokan Barat",type= "Express", image_url= "https://lh6.googleusercontent.com/SGOWlY45_rjF3JwsSnaa33wjAADPhMzmruanH-DDqYrQcnd8EFBFKUf8UfBAomU1f_6C9dtIH6wVYhpPD8d5ZhO_ooxGanhaR8Q445EMMeHoQUXrqueshXqEG7bA5ISknqxH2Bw",description= "Ngumbahyuk hadir untuk meringankan beban kalian yang penuh itu, Yuk di order segera dijamin cucian bakal harum dan bersih kembali",price= "Rp8.000/ Kg"),
+<<<<<<< HEAD
     LaundryShop(name="Laundry Bersih", rating=4.2, address="Jln Nginden", type="Regular", image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBK-LYCmJKCkm2rulF7H7gO3VSsQ4KnzvGDUFB7b8lTcaMXjcTodIgaW3I6pVk1YrgqJ8&usqp=CAU", description="Laundry cepat dan bersih dengan harga terjangkau.", price="Rp7.000 /Kg"),
     LaundryShop(name="Sparkle Laundry", rating=4.8, address="Jln Gubeng", type="Express", image_url="https://lh6.googleusercontent.com/SGOWlY45_rjF3JwsSnaa33wjAADPhMzmruanH-DDqYrQcnd8EFBFKUf8UfBAomU1f_6C9dtIH6wVYhpPD8d5ZhO_ooxGanhaR8Q445EMMeHoQUXrqueshXqEG7bA5ISknqxH2Bw", description="Pakaian bersih dan wangi dalam waktu singkat.", price="Rp10.000 /Kg"),
     LaundryShop(name="Clean Wash", rating=4.1, address="Jln Diponegoro", type="Regular", image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU9CNsZCB4EtLEUA5COJ6EJIMBsjLE-A1LrN_1w0dk9Cq2KzCoURO0jzmtEnLMliS1cX8&usqp=CAU", description="Layanan laundry terbaik dengan hasil maksimal.", price="Rp8.000 /Kg"),
@@ -71,6 +76,8 @@ laundries = [
     LaundryShop(name="Laundry Ceria", rating=4.5, address="Jln Kutisari", type="Regular", image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBK-LYCmJKCkm2rulF7H7gO3VSsQ4KnzvGDUFB7b8lTcaMXjcTodIgaW3I6pVk1YrgqJ8&usqp=CAU", description="Laundry ceria dengan hasil maksimal.", price="Rp8.000 /Kg"),
     LaundryShop(name="Clean Spark", rating=4.7, address="Jln Ketintang", type="Express", image_url="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdwYLnSzWmlHdnK0u06OFjcT9qMOFxKRerAUj9zaVJsrGDfMJtcuOJd0-fiUfHO94Km4&usqp=CAU", description="Laundry bersih dan cepat.", price="Rp10.000 /Kg"),
 
+=======
+>>>>>>> 27e2af3dc0095abbf5bce401abd61bcab0bb51c7
 ]
 # Endpoint untuk mendapatkan semua laundries
 @app.get("/", response_model=List[LaundryShop])
